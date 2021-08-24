@@ -3,7 +3,8 @@
 Fonts
 ===============
 */
-@import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap");
+/* @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Lato:wght@300&display=swap');
 
 /*
 =============== 
@@ -18,7 +19,11 @@ Variables
   --clr-primary-3: hsl(185, 81%, 29%);
   --clr-primary-4: hsl(184, 77%, 34%);
   /* primary/main color */
-  --clr-primary-5: hsl(185, 62%, 45%);
+  /* --clr-primary-5: hsl(185, 62%, 45%); */
+  --clr-primary-5: hsl(200, 52%, 32%);
+  --clr-primary-5-1: hsl(199, 52%, 88%);
+  --clr-primary-grey: hsl(218, 23%, 21%);
+
   /* lighter shades of primary color */
   --clr-primary-6: hsl(185, 57%, 50%);
   --clr-primary-7: hsl(184, 65%, 59%);
@@ -38,7 +43,7 @@ Variables
   --clr-grey-9: hsl(212, 33%, 89%);
   --clr-grey-10: hsl(210, 36%, 96%);
   --clr-white: #fff;
-  --ff-primary: "Lato", sans-serif;
+  --ff-primary: 'Lato', sans-serif;
   --transition: all 0.3s linear;
   --spacing: 0.25rem;
   --radius: 0.5rem;
@@ -147,6 +152,30 @@ p {
   background: var(--clr-primary-8);
 }
 
+.section {
+  padding: 5rem 0;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.section-title h2 {
+  text-transform: uppercase;
+}
+.section-title span {
+  color: var(--clr-primary-5);
+}
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+
 /*
 =============== 
 Navbar
@@ -157,6 +186,51 @@ Navbar
 Hero
 ===============
 */
+.hero {
+  min-height: 100vh;
+  background: var(--clr-primary-5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-banner {
+  text-align: center;
+  color: var(--clr-white);
+  padding: 0 3rem;
+}
+.hero-banner h1 {
+  text-transform: uppercase;
+}
+.hero-banner p {
+  max-width: 35rem;
+  margin-left: auto;
+  margin-right: auto;
+  color: var(--clr-grey-10);
+  letter-spacing: var(--spacing);
+}
+.hero-btn {
+  padding: 0.9rem 1.6rem;
+  font-size: 1.35rem;
+  background: var(--clr-white);
+  color: var(--clr-primary-5);
+}
+.hero-btn:hover {
+  background: transparent;
+  color: var(--clr-white);
+  border-color: var(--clr-white);
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background: linear-gradient(rgb(44, 109, 140, 0.6), rgba(0, 0, 0, 0.6)),
+      url('../images/main.jpg') center/cover no-repeat;
+  }
+  .hero-banner {
+    /* padding: 0; */
+  }
+  .hero-banner p {
+    max-width: 45rem;
+  }
+}
 /*
 =============== 
 About
@@ -165,6 +239,42 @@ About
 /* section add to globals */
 /* title add to globals */
 /* section center add to globals */
+
+.about-img,
+.about-info {
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 992px) {
+  .about-center {
+    display: flex;
+    justify-content: space-between;
+  }
+  .about-img,
+  .about-info {
+    flex: 0 0 calc(50% - 2rem);
+    margin-bottom: 0;
+    align-self: center;
+  }
+}
+@media screen and (min-width: 1170px) {
+  .about-img::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0.5rem solid var(--clr-primary-5);
+    box-sizing: border-box;
+    top: -1.5rem;
+    left: -1.5rem;
+    /* z-index: -1; */
+  }
+  .about-img {
+    position: relative;
+  }
+  .about-photo {
+    position: relative;
+  }
+}
 
 /*
 =============== 

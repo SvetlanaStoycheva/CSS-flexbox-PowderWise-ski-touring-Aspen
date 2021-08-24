@@ -5,7 +5,7 @@
 - responsive webside that contains:
   - navbar with logo, links and social icons
   - hero with title and call-to-action button
-  - about section with two colomns layout; before element for the image, a border.
+  - about section with two colomns layout; before sudo element for the image, a border.
   - servises section with three column layout
   - featured tours; carts with hover effects
   - contact form
@@ -13,4 +13,4 @@
   - footer with links and icons
   - JS functionality:
     - toggling between sidebar and navbar
-    - smooth scroling
+    - smooth scrolling
