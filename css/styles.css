@@ -3,8 +3,8 @@
 Fonts
 ===============
 */
-/* @import url("https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"); */
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;700&family=Lato:wght@300&display=swap'); */
 
 /*
 =============== 
@@ -23,6 +23,7 @@ Variables
   /* --clr-primary-5: hsl(200, 52%, 32%); */
   --clr-primary-5: hsl(198, 53%, 20%);
   --clr-primary-5-1: hsl(199, 52%, 88%);
+  --clr-primary-5-2: hsl(31, 61%, 92%);
   --clr-primary-grey: hsl(218, 23%, 21%);
 
   /* lighter shades of primary color */
@@ -150,7 +151,7 @@ p {
 }
 .btn:hover {
   color: var(--clr-primary-1);
-  background: var(--clr-primary-8);
+  background: var(--clr-primary-5-2);
 }
 
 .section {
@@ -400,13 +401,99 @@ Featured Tours
 Contact
 ===============
 */
-
+.contact {
+  background: var(--clr-primary-5-2);
+}
+.contact-form {
+  display: flex;
+  max-width: 28rem;
+}
+.form-control {
+  flex: 1 1 auto;
+  color: var(--clr-grey-5);
+}
+.form-control,
+.btn-submit {
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 300;
+  letter-spacing: var(--spacing);
+  background: var(--clr-white);
+  text-transform: capitalize;
+  border: transparent;
+}
+.form-control::placeholder {
+  color: inherit;
+}
+.btn-submit {
+  font-family: var(--ff-primary);
+  margin-left: 0.5rem;
+  background: var(--clr-grey-9);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.btn-submit:hover {
+  background: var(--clr-grey-10);
+}
+@media screen and (min-width: 992px) {
+  .contact-center {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .contact-form {
+    align-self: flex-start;
+    flex: 1 1 auto;
+    margin-left: 2rem;
+  }
+}
 /*
 =============== 
 Gallery
 ===============
 */
-
+.gallery-img-container {
+  position: relative;
+  background: var(--clr-primary-5-2);
+}
+.gallery-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 2rem;
+  transform: translate(-50%, -50%);
+  color: var(--clr-white);
+  opacity: 0;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.gallery-img {
+  height: 17rem;
+  object-fit: cover;
+  transition: var(--transition);
+}
+.gallery-img-container:hover .gallery-img {
+  opacity: 0.5;
+}
+.gallery-img-container:hover .gallery-icon {
+  opacity: 1;
+}
+@media screen and (min-width: 768px) {
+  .gallery-center {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .gallery-img-container {
+    flex: 0 0 50%;
+  }
+}
+@media screen and (min-width: 920px) {
+  .gallery-img-container {
+    flex: 0 0 25%;
+  }
+}
 /*
 =============== 
 Footer
