@@ -183,6 +183,116 @@ p {
 Navbar
 ===============
 */
+.nav-logo {
+  color: var(--clr-grey-4);
+}
+.nav-logo span {
+  color: var(--clr-primary-5-1);
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--clr-white);
+  box-shadow: var(--dark-shadow);
+  z-index: 2;
+}
+.nav-icons {
+  display: none;
+}
+.nav-center {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.nav-toggle {
+  background: transparent;
+  border: transparent;
+  font-size: 1.5rem;
+  color: var(--clr-primary-5);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.nav-toggle:hover {
+  transform: scale(1.2);
+}
+.nav-link {
+  display: block;
+  padding: 1rem 2rem;
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  transition: var(--transition);
+  color: var(--clr-grey-1);
+  cursor: pointer;
+  font-size: 1rem;
+}
+.nav-link:hover {
+  color: var(--clr-grey-5);
+  background: var(--clr-primary-5-2);
+  padding-left: 2.5rem;
+}
+.nav-links {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+  /* display: none;  */
+}
+.show-links {
+  height: 280px;
+  /* display: block; */
+}
+@media screen and (min-width: 992px) {
+  .nav-toggle {
+    display: none;
+  }
+  .nav-logo {
+    margin: 0 -2rem;
+  }
+  .nav-links {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+  }
+  .nav-link {
+    padding: 0;
+    margin-left: 2rem;
+  }
+  .nav-link:hover {
+    padding: 0;
+    color: var(--clr-primary-5);
+    background: transparent;
+    transform: scale(1.1);
+  }
+
+  .nav-center {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    flex-wrap: wrap;
+  }
+  .nav-icons {
+    display: flex;
+    align-self: center;
+  }
+  .nav-icon {
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    color: var(--clr-grey-4);
+    transition: var(--transition);
+  }
+  .nav-icon:hover {
+    color: var(--clr-primary-5-1);
+  }
+}
+
 /*
 =============== 
 Hero
@@ -498,4 +608,42 @@ Gallery
 =============== 
 Footer
 ===============
-*/ ;
+*/
+.footer {
+  background: var(--clr-primary-grey);
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.footer-links,
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+.footer-link {
+  color: var(--clr-white);
+  text-transform: capitalize;
+  font-size: 1rem;
+  margin-right: 1rem;
+  letter-spacing: var(--spacing);
+  transition: var(--transition);
+}
+.footer-link:hover {
+  color: var(--clr-grey-5);
+}
+.footer-icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: var(--clr-white);
+  transition: var(--transition);
+}
+.footer-icon:hover {
+  color: var(--clr-grey-5);
+}
+.copyright {
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  color: var(--clr-white);
+}
