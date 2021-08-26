@@ -1,19 +1,19 @@
 ## CSS Flexbox project - POWDERWISE || ski guiding Aspen
 
-- see the project on Netlify
-- project is inspired by CSS flexbox project in John Smilga [CSS tutorial](https://www.udemy.com/course/in-depth-html-css-course-build-responsive-websites/learn/lecture/18361130#content)
-- responsive webside that contains:
-  - navbar with logo, links and social icons
-  - hero with title and call-to-action button
-  - about section with two colomns layout; before sudo element for the image, a border.
-  - servises section with three column layout
-  - featured tours; carts with hover effects
-  - contact form
-  - gallery
-  - footer with links and icons
+- See the project on Netlify
+- Project is inspired by CSS flexbox project in John Smilga [CSS tutorial](https://www.udemy.com/course/in-depth-html-css-course-build-responsive-websites/learn/lecture/18361130#content)
+- Responsive website that contains:
+  - Navbar with logo, links and social icons
+  - Hero with title and call-to-action button
+  - About section with two column layout; before pseudo element for the image, a border.
+  - Servises section with three column layout
+  - Featured tours; cards with hover effects
+  - Contact form
+  - Gallery
+  - Footer with links and icons
   - JS functionality:
-    - toggling between sidebar and navbar
-    - smooth scrolling
+    - Toggling between sidebar and navbar
+    - Smooth scrolling
 
 <p align-items: center>
     <img src='./images/Screenshot-1.png' width='500'>
