@@ -14,3 +14,33 @@
   - JS functionality:
     - toggling between sidebar and navbar
     - smooth scrolling
+
+<p align-items: center>
+    <img src='./images/Screenshot-1.png' width='500'>
+</p>
+<br/><br/>
+
+<p align-items: center>
+    <img src='./images/Screenshot-2.png' width='500'>
+</p>
+<br/><br/>
+
+<p align-items: center>
+    <img src='./images/Screenshot-3.png' width='500'>
+</p>
+<br/><br/>
+
+<p align-items: center>
+    <img src='./images/Screenshot-4.png' width='500'>
+</p>
+<br/><br/>
+
+<p align-items: center>
+    <img src='./images/Screenshot-5.png' width='500'>
+</p>
+<br/><br/>
+
+<p align-items: center>
+    <img src='./images/Screenshot-6.png' width='500'>
+</p>
+<br/><br/>
