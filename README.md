@@ -1,6 +1,6 @@
 ## CSS Flexbox project - POWDERWISE || ski guiding Aspen
 
-- See the project on Netlify
+- [See the project on Netlify](https://sweta-css-flexbox-ski-touring-powderwise.netlify.app)
 - Project is inspired by CSS flexbox project in John Smilga [CSS tutorial](https://www.udemy.com/course/in-depth-html-css-course-build-responsive-websites/learn/lecture/18361130#content)
 - Responsive website that contains:
   - Navbar with logo, links and social icons
